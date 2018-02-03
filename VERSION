@@ -1,5 +1,7 @@
 {
   "code": 0,
   "version": "0.3.0",
-  "nodes": "add new feature" 
+  "build": "300",
+  "notes": "update",
+  "url": "https://github.com/langyanduan/reborn"
 }
