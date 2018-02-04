@@ -11,6 +11,10 @@ Reborn 是一款 macOS 上的透明代理
 最后说明一下，内置了 crash 上报会上传到 hockeyapp 和版本升级检测的，没有其他额外的网络功能了。
 
 
+配置详解：
+[detail](./DETAIL.md)
+
+
 下载地址：
 
 https://github.com/langyanduan/Reborn/releases
