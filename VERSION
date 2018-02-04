@@ -1,7 +1,7 @@
 {
   "code": 0,
-  "version": "0.3.3",
-  "build": "314",
-  "notes": "fix parse url",
-  "url": "https://github.com/langyanduan/Reborn/releases/download/0.3.3/Reborn.zip"
+  "version": "0.3.4",
+  "build": "316",
+  "notes": "fix icon color on dark mode",
+  "url": "https://github.com/langyanduan/Reborn/releases/download/0.3.4/Reborn.zip"
 }
