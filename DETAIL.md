@@ -139,8 +139,11 @@ reject:
 ss:
   - facebook.com, twitter.com
 # IP 归属地对应的规则组
+# 具体 code 见：https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes
 geoip:
   cn: direct
+  hk: direct
+  jp: reject
 # 当所有规则都无法匹配时将使用 default 中的规则组进行路由
 default: ss
 
