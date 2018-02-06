@@ -180,9 +180,9 @@ smartdns:
   server: 8.8.8.8:53
   # 改字段当前仅支持 tcp 被忽略
   # protocol: tcp
-  skip_geoip: cn
+  skip_geoip: cn, hk
   skip_ip: 10.0.0.0/8
-  skip_domain: baidu.com
+  skip_domain: baidu.com, qq.com
   # 
   force_ip:
     # DNS cache pollution
