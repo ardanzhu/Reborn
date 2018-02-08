@@ -43,6 +43,8 @@ https://github.com/langyanduan/Reborn/releases
 
 ## 更新记录
 
+* 0.4.21
+支持根据进程名分流，具体见[配置详解](https://github.com/langyanduan/Reborn/blob/master/DETAIL.md)
 * 0.4.2  
 增加 udp 转发支持，默认关闭，具体见[配置详解](https://github.com/langyanduan/Reborn/blob/master/DETAIL.md)
 * 0.4.1  
