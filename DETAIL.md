@@ -146,6 +146,10 @@ geoip:
   cn: direct
   hk: direct
   jp: reject
+# 进程对应的规则组, 进程名称作为 key, 对应的规则作为 value. 进程名大小写不敏感
+process:
+  ss-local: direct
+  thunder: direct
 # 当所有规则都无法匹配时将使用 default 中的规则组进行路由
 default: ss
 
