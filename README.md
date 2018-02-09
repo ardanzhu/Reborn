@@ -104,6 +104,8 @@ process:
 
 ## 更新记录
 
+* 0.4.24
+修复一个 udp tunnel 引起的 crash
 * 0.4.21  
 支持根据进程名分流，具体见[配置详解](https://github.com/langyanduan/Reborn/blob/master/DETAIL.md)
 * 0.4.2  

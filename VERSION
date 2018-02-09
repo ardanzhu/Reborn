@@ -1,7 +1,7 @@
 {
   "code": 0,
-  "version": "0.4.23",
-  "build": "331",
-  "notes": "fix bug",
-  "url": "https://github.com/langyanduan/Reborn/releases/download/0.4.23/Reborn.zip"
+  "version": "0.4.24",
+  "build": "333",
+  "notes": "fix crash cause by udp tunnel",
+  "url": "https://github.com/langyanduan/Reborn/releases/download/0.4.24/Reborn.zip"
 }
