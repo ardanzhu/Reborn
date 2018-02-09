@@ -1,7 +1,7 @@
 {
   "code": 0,
-  "version": "0.4.24",
-  "build": "333",
-  "notes": "fix crash cause by udp tunnel",
-  "url": "https://github.com/langyanduan/Reborn/releases/download/0.4.24/Reborn.zip"
+  "version": "0.4.25",
+  "build": "335",
+  "notes": "修复无法在 macOS 10.12 上使用的问题",
+  "url": "https://github.com/langyanduan/Reborn/releases/download/0.4.25/Reborn.zip"
 }
