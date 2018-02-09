@@ -43,6 +43,65 @@ https://github.com/langyanduan/Reborn/blob/master/template.yaml
 https://github.com/langyanduan/Reborn/releases
 
 
+## QA
+
+### 1. 如何判断 `Reborn` 已启用，并接管了流量
+
+查看网卡信息，输入命令 `ifconfig`，可以看到 `utun6` 为 `Reborn` 创建的虚拟网卡
+
+```  
+utun6: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500
+    inet 240.0.200.2 --> 240.0.200.255 netmask 0xffffff00
+    inet6 fe80::147e:ad68:d777:e455%utun6 prefixlen 64 secured scopeid 0xf
+    nd6 options=201<PERFORMNUD,DAD>
+```
+
+
+查看路由表，输入 `netstat -nr`，可以看到 `utun6` 作为默认下一跳地址排在第一位
+
+```
+Routing tables
+
+Internet:
+Destination        Gateway            Flags        Refs      Use   Netif Expire
+default            240.0.200.1        UGSc           71       21   utun6
+default            192.168.1.1        UGScI          11        0     en0
+```
+
+使用 `ping` 任意地址，响应时间都是小数毫秒级别，说明 icmp 协议均被本地接管
+
+```
+➜  reborn git:(master) ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8): 56 data bytes
+64 bytes from 8.8.8.8: icmp_seq=0 ttl=255 time=0.169 ms
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=255 time=0.201 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=255 time=0.312 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=255 time=0.174 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=255 time=0.193 ms
+^C
+--- 8.8.8.8 ping statistics ---
+5 packets transmitted, 5 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 0.169/0.210/0.312/0.052 ms
+```
+
+### 2. 如何作为前端使用
+
+需要配置进程规则，如使用 `ss-local` 作为后端
+
+```
+[ROUTER]
+...
+process:
+  ss-local: direct
+...
+```
+
+### 3. 如何查看日志
+
+日志在路径 `~/Library/Application Support/Reborn/XLogs` 下。  
+可以使用脚本查看具体内容，脚本在路径 `/Applications/Reborn.app/Contents/MacOS/decode_mars_nocrypt_log_file.py`
+
+
 ## 更新记录
 
 * 0.4.21  
