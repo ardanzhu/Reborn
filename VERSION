@@ -3,5 +3,6 @@
   "version": "0.4.30",
   "build": "345",
   "notes": "fix crash",
-  "url": "https://github.com/langyanduan/Reborn/releases/download/0.4.30/Reborn.zip"
+  "url": "https://github.com/langyanduan/Reborn/releases/download/0.4.30/Reborn.zip",
+  "force": true
 }
