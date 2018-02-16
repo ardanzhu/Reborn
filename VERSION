@@ -1,7 +1,7 @@
 {
   "code": 0,
-  "version": "0.4.27",
-  "build": "340",
-  "notes": "1. 修复切换网络时可能无法上网的问题\n2. DNS 查询超时会走 smartdns\n3. 更新内置的 GeoLite2 数据库",
-  "url": "https://github.com/langyanduan/Reborn/releases/download/0.4.27/Reborn.zip"
+  "version": "0.4.30",
+  "build": "345",
+  "notes": "fix crash",
+  "url": "https://github.com/langyanduan/Reborn/releases/download/0.4.30/Reborn.zip"
 }
