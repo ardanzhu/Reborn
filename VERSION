@@ -1,8 +1,8 @@
 {
   "code": 0,
-  "version": "0.4.30",
-  "build": "345",
-  "notes": "fix crash",
-  "url": "https://github.com/langyanduan/Reborn/releases/download/0.4.30/Reborn.zip",
-  "force": true
+  "version": "0.4.33",
+  "build": "351",
+  "notes": "兼容非标准的 http 响应头",
+  "url": "https://github.com/langyanduan/Reborn/releases/download/0.4.33/Reborn.zip",
+  "force": false
 }
