@@ -4,5 +4,5 @@
   "build": "353",
   "notes": "fix crash",
   "url": "https://github.com/langyanduan/Reborn/releases/download/0.4.34/Reborn.zip",
-  "force": false
+  "force": true
 }
