@@ -105,6 +105,8 @@ process:
 ## 更新记录
 * 0.4.36  
 fix bug
+* 0.4.35  
+修复第一次使用 PrivilegedHelper 认证失败的问题
 * 0.4.34  
 修复 STL 实现引起的 crash
 * 0.4.33  
