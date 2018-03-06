@@ -103,7 +103,7 @@ system-proxy:
 #        aes-256-gcm
 #        chacha20-ietf-poly1305
 #      password 密码
-#      udp_reply 是否开启 udp 转发，默认关闭，使用 enable 或者 disable
+#      udp_relay 是否开启 udp 转发，默认关闭，使用 enable 或者 disable
 
 - name: ss
   server: yourserver.com
@@ -112,7 +112,7 @@ system-proxy:
   type: shadowsocks
   method: chacha20-ietf
   password: password
-  udp_reply: enable
+  udp_relay: enable
 
 [ROUTER]
 # 路由规则
