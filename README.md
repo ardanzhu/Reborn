@@ -101,6 +101,9 @@ process:
 日志在路径 `~/Library/Application Support/Reborn/XLogs` 下。  
 可以使用脚本查看具体内容，脚本在路径 `/Applications/Reborn.app/Contents/MacOS/decode_mars_nocrypt_log_file.py`
 
+### 4. 使用 iPhone 的个人热点并以 USB 方式连接电脑, 会造成个人热点以规律的方式连接断开
+
+把 *系统偏好设置-网络-iPhone USB* 中的 *除非需要，否则请停用* 勾去掉
 
 ## 更新记录
 * 0.4.36  
